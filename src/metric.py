@@ -9,9 +9,6 @@ from sklearn.metrics import r2_score, mean_squared_error
 from sklearn.metrics import confusion_matrix, accuracy_score
 
 
-
-
-
 def adjusted_r2_score(y_true, y_pred, model):
     """ calculate adjusted R2
     Input:
