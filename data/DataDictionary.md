@@ -2,7 +2,6 @@
 This dataset contains information collected by the US Census Service concerning housing in the area of Boston Massachusetts. It was obtained from the StatLib archive (http://lib.stat.cmu.edu/datasets/boston). The dataset has 506 cases.
 Source: The data was originally published by Harrison, D. and Rubinfeld, D.L. `Hedonic prices and the demand for clean air', J. Environ. Economics & Management, vol.5, 81-102, 1978.
 There are 14 attributes in each case of the dataset. They are:
-    
     CRIM 	per capita crime rate by town
     ZN     	proportion of residential land zoned for lots over 25,000 sq.ft.
     INDUS	proportion of non-retail business acres per town.
@@ -16,10 +15,8 @@ There are 14 attributes in each case of the dataset. They are:
     PTRATIO 	pupil-teacher ratio by town
     LSTAT   	% lower status of the population
     MEDV	Median value of owner-occupied homes in $1000
-
 # Cereal
 Source: DATA ANALYSIS FOR STUDENT LEARNING (DASL)
-
 1. Name: Name of cereal
 2. mfr: Manufacturer of cereal where A = American Home Food Products; G = General Mills; K = 
     Kelloggs; N = Nabisco; P = Post; Q = Quaker Oats; R = Ralston Purina
@@ -38,7 +35,6 @@ Source: DATA ANALYSIS FOR STUDENT LEARNING (DASL)
 14. weight: weight in ounces of one serving
 15. cups: number of cups in one serving
 16. rating: a rating of the cereals calculated by Consumer Reports
-
 # GermanCredit
 | Variable Name    | Description                                 | Variable Type | Code Description                                                 |
 | :--------------- | :------------------------------------------ | :------------ | :--------------------------------------------------------------- |
@@ -95,3 +91,42 @@ NUM_DEPENDENTS  | Number of people for whom liable to provide maintenance |   Nu
 TELEPHONE|        Applicant has phone in his or her name | Binary |   0: No, 1: Yes
 FOREIGN |  	   Foreign worker   		     |    Binary     | 0: No, 1: Yes
 RESPONSE|         Credit rating is good|   	         Binary  |    0: No, 1: Yes   	
+# CancerMortality
+These data were aggregated from a number of sources including the American Community Survey ([census.gov](http://census.gov/)), [clinicaltrials.gov](http://clinicaltrials.gov/), and [cancer.gov](http://cancer.gov/). Most of the data preparation process can be veiwed [here](https://data.world/nrippner/cancer-trials).
+
+* __TARGET_deathRate:__ Dependent variable. Mean per capita (100,000) cancer mortalities(a)
+* __avgAnnCount:__ Mean number of reported cases of cancer diagnosed annually(a)
+* __avgDeathsPerYear:__ Mean number of reported mortalities due to cancer(a)
+* __incidenceRate:__ Mean per capita (100,000) cancer diagoses(a)
+* __medianIncome:__ Median income per county (b)
+* __popEst2015:__ Population of county (b)
+* __povertyPercent:__ Percent of populace in poverty (b)
+* __studyPerCap:__ Per capita number of cancer-related clinical trials per county (a)
+* __binnedInc:__ Median income per capita binned by decile (b)
+* __MedianAge:__ Median age of county residents (b)
+* __MedianAgeMale:__ Median age of male county residents (b)
+* __MedianAgeFemale:__ Median age of female county residents (b)
+* __Geography:__ County name (b)
+* __AvgHouseholdSize:__ Mean household size of county (b)
+* __PercentMarried:__ Percent of county residents who are married (b)
+* __PctNoHS18_24:__ Percent of county residents ages 18-24 highest education attained:__ less than high school (b)
+* __PctHS18_24:__ Percent of county residents ages 18-24 highest education attained:__ high school diploma (b)
+* __PctSomeCol18_24:__ Percent of county residents ages 18-24 highest education attained:__ some college (b)
+* __PctBachDeg18_24:__ Percent of county residents ages 18-24 highest education attained:__ bachelor's degree (b)
+* __PctHS25_Over:__ Percent of county residents ages 25 and over highest education attained:__ high school diploma (b)
+* __PctBachDeg25_Over:__ Percent of county residents ages 25 and over highest education attained:__ bachelor's degree (b)
+* __PctEmployed16_Over:__ Percent of county residents ages 16 and over employed (b)
+* __PctUnemployed16_Over:__ Percent of county residents ages 16 and over unemployed (b)
+* __PctPrivateCoverage:__ Percent of county residents with private health coverage (b)
+* __PctPrivateCoverageAlone:__ Percent of county residents with private health coverage alone (no public assistance) (b)
+* __PctEmpPrivCoverage:__ Percent of county residents with employee-provided private health coverage (b)
+* __PctPublicCoverage:__ Percent of county residents with government-provided health coverage (b)
+* __PctPubliceCoverageAlone:__ Percent of county residents with government-provided health coverage alone (b)
+* __PctWhite:__ Percent of county residents who identify as White (b)
+* __PctBlack:__ Percent of county residents who identify as Black (b)
+* __PctAsian:__ Percent of county residents who identify as Asian (b)
+* __PctOtherRace:__ Percent of county residents who identify in a category which is not White, Black, or Asian (b)
+* __PctMarriedHouseholds:__ Percent of married households (b)
+* __BirthRate:__ Number of live births relative to number of women in county (b)
+(a): years 2010-2016
+(b): 2013 Census Estimates
