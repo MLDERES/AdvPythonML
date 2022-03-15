@@ -91,8 +91,10 @@ NUM_DEPENDENTS  | Number of people for whom liable to provide maintenance |   Nu
 TELEPHONE|        Applicant has phone in his or her name | Binary |   0: No, 1: Yes
 FOREIGN |  	   Foreign worker   		     |    Binary     | 0: No, 1: Yes
 RESPONSE|         Credit rating is good|   	         Binary  |    0: No, 1: Yes   	
+
 # CancerMortality
 These data were aggregated from a number of sources including the American Community Survey ([census.gov](http://census.gov/)), [clinicaltrials.gov](http://clinicaltrials.gov/), and [cancer.gov](http://cancer.gov/). Most of the data preparation process can be veiwed [here](https://data.world/nrippner/cancer-trials).
+[source](https://data.world/nrippner/ols-regression-challenge)
 
 * __TARGET_deathRate:__ Dependent variable. Mean per capita (100,000) cancer mortalities(a)
 * __avgAnnCount:__ Mean number of reported cases of cancer diagnosed annually(a)
