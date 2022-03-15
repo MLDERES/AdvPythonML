@@ -1,6 +1,6 @@
 # Boston Housing
 This dataset contains information collected by the US Census Service concerning housing in the area of Boston Massachusetts. It was obtained from the StatLib archive (http://lib.stat.cmu.edu/datasets/boston). The dataset has 506 cases.
-Source: The data was originally published by Harrison, D. and Rubinfeld, D.L. `Hedonic prices and the demand for clean air', J. Environ. Economics & Management, vol.5, 81-102, 1978.
+* __Source__: The data was originally published by Harrison, D. and Rubinfeld, D.L. `Hedonic prices and the demand for clean air', J. Environ. Economics & Management, vol.5, 81-102, 1978.
 There are 14 attributes in each case of the dataset. They are:
     CRIM 	per capita crime rate by town
     ZN     	proportion of residential land zoned for lots over 25,000 sq.ft.
@@ -16,7 +16,7 @@ There are 14 attributes in each case of the dataset. They are:
     LSTAT   	% lower status of the population
     MEDV	Median value of owner-occupied homes in $1000
 # Cereal
-Source: DATA ANALYSIS FOR STUDENT LEARNING (DASL)
+* __Source__: DATA ANALYSIS FOR STUDENT LEARNING (DASL)
 1. Name: Name of cereal
 2. mfr: Manufacturer of cereal where A = American Home Food Products; G = General Mills; K = 
     Kelloggs; N = Nabisco; P = Post; Q = Quaker Oats; R = Ralston Purina
@@ -132,3 +132,13 @@ These data were aggregated from a number of sources including the American Commu
 * __BirthRate:__ Number of live births relative to number of women in county (b)
 (a): years 2010-2016
 (b): 2013 Census Estimates
+
+# Insurance
+* __age__: age of primary beneficiary
+* __sex__: insurance contractor gender, female, male
+* __bmi__: Body mass index, providing an understanding of body, weights that are relatively high or low relative to height,
+objective index of body weight (kg / m ^ 2) using the ratio of height to weight, ideally 18.5 to 24.9
+* __children__: Number of children covered by health insurance / Number of dependents
+* __smoker__: Smoking
+* __region__: the beneficiary's residential area in the US, northeast, southeast, southwest, northwest.
+* __charges__: Individual medical costs billed by health insurance
