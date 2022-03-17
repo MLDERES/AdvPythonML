@@ -4,3 +4,4 @@ xgboost
 pandas_profiling
 dtale
 sweetviz
+pre-commit
