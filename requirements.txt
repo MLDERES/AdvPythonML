@@ -1,3 +1,6 @@
 plotnine
 seaborn
 xgboost
+pandas_profiling
+dtale
+sweetviz
