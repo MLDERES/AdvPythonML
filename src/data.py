@@ -18,7 +18,8 @@ def load_excel(fileName: str, **kwargs) -> pd.DataFrame:
     return pd.read_excel(DATA_DIR / f"{fileName}.xlsx", **kwargs)
 
 
-def normalize(data:pd.DataFrame, columns, drop_old=False)-> pd.DataFrame:
+def normalize(df:pd.DataFrame, columns, drop_old=False)-> pd.DataFrame:
+    data = df.copy(deep=True)
     for c in columns:
         new_column_name = f"{c}_NORM"
         data[new_column_name] = (data[c] - data[c].min()) / (data[c].max() - data[c].min())
@@ -27,7 +28,8 @@ def normalize(data:pd.DataFrame, columns, drop_old=False)-> pd.DataFrame:
     return data
 
 
-def standardize(data:pd.DataFrame, columns, drop_old=False)-> pd.DataFrame:
+def standardize(df:pd.DataFrame, columns, drop_old=False)-> pd.DataFrame:
+    data = df.copy(deep=True)
     for c in columns:
         new_column_name = f"{c}_STD"
         data[new_column_name] = (data[c] - data[c].mean()) / data[c].std()
