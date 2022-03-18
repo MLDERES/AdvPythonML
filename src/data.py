@@ -9,6 +9,8 @@ TRUE_VALUES = ["Yes", "yes", "y", "Y"]
 
 
 def load_data(fileName: str, **kwargs) -> pd.DataFrame:
+    data_file = DATA_DIR/f'{fileName}.csv'
+    print(data_file)
     return pd.read_csv(DATA_DIR / f"{fileName}.csv", **kwargs)
 
 
