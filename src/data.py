@@ -3,7 +3,7 @@ import pandas as pd
 from pathlib import Path
 from pandas.core.dtypes.inference import is_list_like
 
-DATA_DIR = Path("../data")
+DATA_DIR = Path.cwd().parents[0]/'data'
 FALSE_VALUES = ["No", "no", "n", "N"]
 TRUE_VALUES = ["Yes", "yes", "y", "Y"]
 
