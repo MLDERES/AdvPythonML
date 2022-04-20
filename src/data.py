@@ -258,6 +258,48 @@ def convert_to_date(df, columns):
         df[col] = pd.to_datetime(df[col], errors="ignore")
     return df
 
+@dump_df_desc(description="Convert columns to categorical")
+def convert_to_categorical(df, columns):
+    """
+    Convert the list of columns to categorical
+    
+    Parameters:
+    ----------
+    df : DataFrame
+        the DataFrame to work on
+    columns : str or list-like
+        columns that are in-scope for the change, 
+        if None or 'all' then all columns
+    Return:
+    ------
+    The modified dataframe
+    """
+    for col in _get_column_list(df, columns):
+        logging.debug(f"Converting column to categorical - {col}")
+        df[col] = df[col].astype('category')
+    return df
+
+@dump_df_desc(description="Convert columns to ordinal")
+def convert_to_ordinal(df, columns):
+    """
+    Convert the list of columns to ordinal
+    
+    Parameters:
+    ----------
+    df : DataFrame
+        the DataFrame to work on
+    columns : str or list-like
+        columns that are in-scope for the change, 
+        if None or 'all' then all columns
+    Return:
+    ------
+    The modified dataframe
+    """
+    for col in _get_column_list(df, columns):
+        logging.debug(f"Converting column to ordinal - {col}")
+        df[col] = pd.Categorical(df[col], ordered=True)
+    return df
+
 
 @dump_df_desc(description="Dropping rows with not enough relevant data")
 def remove_na_rows(df, how="any", threshold=None, subset=None):
@@ -460,7 +502,7 @@ def standardize(df:pd.DataFrame, columns, drop_old=False)-> pd.DataFrame:
 if __name__ == "__main__":
     test_df = pd.DataFrame({'a':[1,0,1,0]})
     print(convert_to_bool(test_df,'a').head())
-    
+
     
 
 
